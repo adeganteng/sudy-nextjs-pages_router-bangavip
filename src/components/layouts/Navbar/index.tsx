@@ -1,11 +1,16 @@
+import Link from "next/link";
+
 const Navbar = () => {
   return (
     <nav className="navbar">
       <h1>Navbar</h1>
       <div>
-        <a href="#">Home</a>
-        <a href="/about">About</a>
-        <a href="/product">Product</a>
+        <Link href="#">Home</Link>
+        <Link href="/about">About</Link>
+        <Link href="/product">Product</Link>
+      </div>
+      <div>
+        <Link href={"auth/login"}>Login</Link>
       </div>
     </nav>
   );
